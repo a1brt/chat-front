@@ -1,6 +1,5 @@
 import {
   AppBar,
-  Box,
   Button,
   CssBaseline,
   Modal,
@@ -11,9 +10,13 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import User from "./components/user";
 import { useState } from "react";
 import Sigining from "./components/signing";
+import Chat from "./components/chat";
 
 const mockUser = {
   name: "User",
+};
+const mockMessages = {
+  messages: [],
 };
 const logedIn = false;
 
@@ -28,7 +31,6 @@ function App() {
   return (
     <>
       <CssBaseline />
-
       <AppBar position="relative">
         <Toolbar>
           <MailOutlineIcon />
@@ -50,8 +52,9 @@ function App() {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Sigining/>
+        <Sigining />
       </Modal>
+      <Chat chatData={mockMessages} />
     </>
   );
 }

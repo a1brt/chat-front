@@ -76,7 +76,7 @@ function Sigining() {
             </Button>
           </Box>
         ) : (
-            <Box component="form" noValidate sx={{ mt: 1 }}>
+          <Box component="form" noValidate sx={{ mt: 1 }}>
             <TextField
               margin="normal"
               required
@@ -96,7 +96,7 @@ function Sigining() {
               type="password"
               id="password"
             />
-        <TextField
+            <TextField
               margin="normal"
               required
               fullWidth
@@ -113,7 +113,7 @@ function Sigining() {
             >
               Sign Up
             </Button>
-            </Box>
+          </Box>
         )}
       </Box>
     </>
